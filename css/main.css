@@ -11,14 +11,35 @@
     --logo-color: #FFC107;
 }
 
-nav {
+.our-nav {
     position: absolute;
     top: 0;
     left: 0;
     z-index: 10;
     height: 40px;
+    color: white;
     width: 100%;
-    background-color: rgba(0, 0, 0, .3);
+    opacity: .7 !important;
+}
+
+nav {
+    opacity: .8 !important;
+}
+
+nav .navbar-nav li a{
+    color: var(--logo-color) !important;
+    margin-right: 2em;
+    padding-top: 1.5em;
+    font-size: 1.2em;
+    padding-bottom: 1em;
+}
+
+nav a{
+    color: var(--logo-color) !important;
+    margin-right: 2em;
+    padding-top: 1.5em;
+    font-size: 1.2em;
+    padding-bottom: 1em;
 }
 
 
@@ -104,4 +125,3 @@ nav {
     color: #000;
     filter: brightness(.7);
 }
-
