@@ -10,8 +10,7 @@
 :root {
     --logo-color: #FFC107;
     --background-color: #18191b;
-    --section-background: #202020;
-    --dark-background: #101214;
+    --section-background: #101214;
     --body-font: 'Poppins', sans-serif;
     background-color: var(--background-color);
 }
@@ -29,7 +28,7 @@
 
 nav {
     opacity: .9 !important;
-    background-color: var(--dark-background) !important;
+    background-color: var(--section-background) !important;
 }
 
 nav .navbar-nav li a{
@@ -134,7 +133,7 @@ nav a{
 }
 
 #contact {
-    background-color: var(--dark-background);
+    background-color: var(--section-background);
     font-family: var(--body-font);
     width: 100vw;
 }
@@ -160,7 +159,7 @@ nav a{
 	margin: 0 0 15px;
 	position: relative;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 .contact-form h2:before, .contact-form h2:after {
 	content: "";
