@@ -10,6 +10,8 @@
 :root {
     --logo-color: #FFC107;
     --background-color: #18191b;
+    --section-background: #202020;
+    --body-font: 'Poppins', sans-serif;
     background-color: var(--background-color);
 }
 
@@ -25,7 +27,7 @@
 }
 
 nav {
-    opacity: .8 !important;
+    opacity: .9 !important;
 }
 
 nav .navbar-nav li a{
@@ -45,10 +47,6 @@ nav a{
     font-size: 1.2em;
     padding-bottom: 1em;
     font-family: 'Poppins', sans-serif;
-}
-
-.navbar-custom .nav-item:hover .nav-link {
-    color: red;
 }
 
 .links {
@@ -124,7 +122,7 @@ nav a{
     color: #000;
     transition: .2s linear;
     align-self: center;
-    font-family: 'Lora', serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .our-btn:hover {
@@ -132,3 +130,148 @@ nav a{
     color: #000;
     filter: brightness(.7);
 }
+
+#contact {
+    background-color: var(--background-color);
+    font-family: var(--body-font);
+    width: 100vw;
+}
+
+.content {
+    padding-top: 1em;
+}
+
+.content h2 {
+    color: white;
+    text-align: center;
+}
+
+.contact-form {
+	width: 70vw;
+	margin: 0 auto;
+	padding: 4em 0;
+    font-size: 15px;
+    opacity: .9;
+}
+.contact-form h2 {
+	color: #FFFFFF;
+	margin: 0 0 15px;
+	position: relative;
+    text-align: center;
+    font-size: 1.5em;
+}
+.contact-form h2:before, .contact-form h2:after {
+	content: "";
+	height: 2px;
+	width: 12%;
+	background: var(--logo-color);
+	position: absolute;
+	top: 50%;
+	z-index: 2;
+}	
+.contact-form h2:before {
+	left: 0;
+}
+.contact-form h2:after {
+	right: 0;
+}
+
+.contact-form form {
+	color: #999;
+	border-radius: 3px;
+	margin-bottom: 15px;
+	background: #212529;;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	padding: 30px;
+}
+
+.contact-form form input[type="text"], input[type="email"], textarea[type="text"] {
+    background-color: rgba(0,0,0,0.2);
+    color: var(--logo-color);
+}
+
+.contact-form form input:focus, textarea[type="text"]:focus {
+    background-color: rgba(0,0,0,0.2);
+    color: var(--logo-color);
+}
+
+input::-webkit-input-placeholder {
+    color: var(--logo-color) !important;
+}
+     
+input:-moz-placeholder { /* Firefox 18- */
+    color: var(--logo-color) !important;  
+}
+     
+input::-moz-placeholder {  /* Firefox 19+ */
+    color: var(--logo-color) !important;  
+}
+     
+input:-ms-input-placeholder {  
+    color: var(--logo-color) !important;  
+}
+
+textarea::-webkit-input-placeholder {
+    color: #0bf;
+}
+      
+textarea::-moz-placeholder { /* Firefox 18- */
+    color: var(--logo-color) !important;  
+}
+      
+textarea::-moz-placeholder {  /* Firefox 19+ */
+    color: var(--logo-color) !important;  
+}
+      
+textarea::-ms-input-placeholder {
+    color: var(--logo-color) !important;  
+}
+      
+textarea::placeholder {
+    color: var(--logo-color) !important;  
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form .btn {        
+	font-size: 16px;
+	font-weight: bold;		
+	min-width: 140px;
+    outline: none !important;
+    background-color: var(--logo-color) !important;
+}
+.contact-form .row div:first-child {
+    padding-right: 10px;
+}
+.contact-form .row div:last-child {
+	padding-left: 10px;
+}    	
+
+@media only screen and (min-width: 768px) {
+    .contact-form h2:before, .contact-form h2:after {
+        content: "";
+        height: 2px;
+        width: 30%;
+        background: var(--logo-color);
+        position: absolute;
+        top: 50%;
+        z-index: 2;
+    }	
+    .contact-form h2:before {
+        left: 0;
+    }
+    .contact-form h2:after {
+        right: 0;
+    }
+
+    .contact-form h2 {
+        color: #FFFFFF;
+        margin: 0 0 15px;
+        position: relative;
+        text-align: center;
+        font-size: 2.5em;
+    }
+   
+  }
