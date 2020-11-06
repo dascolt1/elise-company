@@ -36,14 +36,19 @@ nav {
     background-color: var(--nav-background) !important;
 }
 
+.nav-item {
+   margin-bottom: -2em;
+}
+
 nav .navbar-nav li a{
     color: var(--logo-color) !important;
     margin-right: 2em;
     padding-top: 1.5em;
     font-size: 1.2em;
-    padding-bottom: 1.5em;
+    padding-bottom: 1em;
     font-family: 'Poppins', sans-serif;
 }
+
 
 /* logo styles  */
 nav a{
@@ -294,5 +299,9 @@ textarea::placeholder {
         margin-top: .5em;
         margin-bottom: .5em;
     }
+
+    .nav-item {
+        margin-bottom: 0em;
+     }
    
   }
