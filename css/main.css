@@ -41,7 +41,7 @@ nav .navbar-nav li a{
     margin-right: 2em;
     padding-top: 1.5em;
     font-size: 1.2em;
-    padding-bottom: 1em;
+    padding-bottom: 1.5em;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -51,8 +51,10 @@ nav a{
     margin-right: 2em;
     padding-top: 1.5em;
     font-size: 1.2em;
-    padding-bottom: 1em;
+    padding-bottom: 1.5em;
     font-family: 'Poppins', sans-serif;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .links {
@@ -146,7 +148,7 @@ nav a{
 }
 
 .content {
-    padding-top: 1em;
+    padding-top: 3em;
 }
 
 .content h2 {
@@ -280,6 +282,17 @@ textarea::placeholder {
         position: relative;
         text-align: center;
         font-size: 2.5em;
+    }
+
+    nav a{
+        color: var(--logo-color) !important;
+        margin-right: 2em;
+        padding-top: 1.5em;
+        font-size: 1.2em;
+        padding-bottom: 1.5em;
+        font-family: 'Poppins', sans-serif;
+        margin-top: .5em;
+        margin-bottom: .5em;
     }
    
   }
