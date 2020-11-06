@@ -162,7 +162,7 @@ nav a{
 }
 
 .contact-form {
-	width: 70vw;
+	width: 85vw;
 	margin: 0 auto;
 	padding: 4em 0;
     font-size: 15px;
@@ -336,5 +336,13 @@ textarea::placeholder {
     .nav-item {
         margin-bottom: 0em;
      }
+
+     .contact-form {
+        width: 70vw;
+        margin: 0 auto;
+        padding: 4em 0;
+        font-size: 15px;
+        opacity: .9;
+    }
    
   }
