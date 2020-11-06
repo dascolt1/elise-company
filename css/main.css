@@ -262,7 +262,39 @@ textarea::placeholder {
 }
 .contact-form .row div:last-child {
 	padding-left: 10px;
-}    	
+}  
+
+.footer {
+    text-align: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    color: white;
+    background-color: #18191b;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 5em;
+}
+
+.footer h3 {
+    font-size: 1.3em;
+}
+
+
+.footer-contact {
+	color: #B1AFAF;
+	text-decoration: none;
+}
+
+.footer-contact:hover {
+	color: white;
+	text-decoration: none;
+}
+
+.footer p {
+	padding-top: 1em;
+	font-size: 1.2em;
+	
+}
 
 @media only screen and (min-width: 768px) {
     .contact-form h2:before, .contact-form h2:after {
