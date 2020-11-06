@@ -273,6 +273,7 @@ textarea::placeholder {
     font-size: 1em;
     font-family: 'Montserrat', sans-serif;
     padding-bottom: 5em;
+    border-top: 1px solid var(--logo-color);
 }
 
 .footer h3 {
