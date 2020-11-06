@@ -11,8 +11,13 @@
     --logo-color: #FFC107;
     --background-color: #18191b;
     --section-background: #101214;
+    --nav-background: #101214;
     --body-font: 'Poppins', sans-serif;
     background-color: var(--background-color);
+}
+
+main {
+    max-width: 100vw;
 }
 
 .our-nav {
@@ -28,7 +33,7 @@
 
 nav {
     opacity: .9 !important;
-    background-color: var(--section-background) !important;
+    background-color: var(--nav-background) !important;
 }
 
 nav .navbar-nav li a{
@@ -60,7 +65,9 @@ nav a{
 #hero {
     position: relative;
     height: 90vh;
-    width: 100vw;
+    width: 100%;
+    min-width: 100%; 
+    min-height: 90%;
 }
 
 #hero:before {
@@ -135,7 +142,7 @@ nav a{
 #contact {
     background-color: var(--section-background);
     font-family: var(--body-font);
-    width: 100vw;
+    max-width: 100vw;
 }
 
 .content {
