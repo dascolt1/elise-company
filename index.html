@@ -27,14 +27,17 @@
               <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/about-us.html">About</a>
+              <a class="nav-link" href="#work">Our Work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="#team">The Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
             </li>  
             <li class="nav-item">
-                <a class="nav-link" href="/financial.html">Financial</a>
-            </li>   
+                <a class="nav-link" href="/financial.html">Financing</a>
+            </li>
           </ul>
         </div>  
       </nav> 
@@ -47,7 +50,7 @@
         </div>
     </section>
     <section id="about">
-        
+
     </section>
     <section id="contact">
         <div class="content">
@@ -57,13 +60,13 @@
             <form action="/brothers/login" method="POST">
                 <h2>Get a quote</h2>
                 <div class="form-group">
-                    <input type="text" class="form-control" name="name" placeholder="Name">
+                    <input type="text" required class="form-control" name="name" placeholder="Name">
                 </div>
                 <div class="form-group">
-                    <input type="email" class="form-control" name="email" placeholder="Email*">
+                    <input type="email" required class="form-control" name="email" placeholder="Email">
                 </div>
                 <div class="form-group">
-                    <textarea type="text" rows="6" class="form-control" name="message" placeholder="Message"></textarea>
+                    <textarea type="text" required rows="6" class="form-control" name="message" placeholder="Message"></textarea>
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-lg btn-block">Get quote</button>
