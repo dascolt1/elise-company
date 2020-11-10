@@ -382,9 +382,11 @@ textarea::placeholder {
     background-color: var(--background-color);
     color: white;
     text-align: center;
-    margin-top: 17em;
+    margin-top: 10em;
     margin-bottom: 0em;
     padding-bottom: 7em;
+    padding-right: 1em;
+    padding-left: 1em;
 }
 
 #soon a {
@@ -393,7 +395,7 @@ textarea::placeholder {
 
 /*  END financing page styles  */
 
-#finance-footer {
+#soon-footer {
     position:absolute;
     bottom:0;
     width:100%;
@@ -472,6 +474,19 @@ textarea::placeholder {
         padding: 4em 0;
         font-size: 15px;
         opacity: .9;
+    }
+
+    #soon {
+        background-color: var(--background-color);
+        color: white;
+        text-align: center;
+        margin-top: 17em;
+        margin-bottom: 0em;
+        padding-bottom: 7em;
+    }
+    
+    #soon a {
+        color: var(--logo-color)
     }
 }
 
