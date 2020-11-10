@@ -2,6 +2,10 @@
 const mod = (x, n) => (x % n + n) % n
 
 window.onload = () => {
+  var slides = document.querySelectorAll(".demo");
+  slides.forEach(slide => {
+    slide.style.backgroundImage = `url(${slide.attributes["src"].value})`;
+  });
   showSlides(0);
 }
 
@@ -25,8 +29,8 @@ function showSlides(n) {
   }
   var mainImg = document.querySelector(".customCarousel > .mainImg");
   console.log(mainImg);
-  mainImg.style.backgroundImage = `url(${slides[slideIndex].src})`;
-  mainImg.alt = slides[slideIndex].alt;
+  mainImg.style.backgroundImage = `url(${slides[slideIndex].attributes["src"].value})`;
+  mainImg.alt = slides[slideIndex].attributes["alt"].value;
   for (let i = 0; i < slides.length; i++) {
   	  slides[i].classList.remove("active");
   }
