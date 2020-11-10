@@ -374,7 +374,33 @@ textarea::placeholder {
 }
 .contact-form .row div:last-child {
 	padding-left: 10px;
-}  
+} 
+
+
+ /*  START financing page styles  */
+#soon {
+    background-color: var(--background-color);
+    color: white;
+    text-align: center;
+    margin-top: 17em;
+    margin-bottom: 0em;
+    padding-bottom: 7em;
+}
+
+#soon a {
+    color: var(--logo-color)
+}
+
+/*  END financing page styles  */
+
+#finance-footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height: 10em;   /* Height of the footer */
+    color: white;
+    background-color: var(--nav-background);
+ }
 
 .footer {
     text-align: center;
@@ -408,6 +434,8 @@ textarea::placeholder {
 	font-size: 1.2em;
 	
 }
+
+
 
 @media only screen and (min-width: 768px) {
     .contact-form h2:before, .contact-form h2:after {
