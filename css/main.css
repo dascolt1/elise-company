@@ -251,8 +251,33 @@ nav .navbar-nav li a{
     filter: none;
 }
 
+.services {
+    list-style: none;
+    font-size: 1.2rem;
+    line-height: 2em;
+}
+
 .cursor {
     cursor: pointer;
+}
+
+.slogan {
+    font-size: 1.5em;
+}
+
+.slogan-below a {
+    color: black;
+    font-weight: 500;
+}
+
+.slogan-below {
+    font-size: 1.2em;
+}
+
+.testimonial {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding-top: .5rem;
 }
 
 /* END Portfolio Section Styles*/
