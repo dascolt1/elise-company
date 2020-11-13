@@ -71,7 +71,6 @@ nav .navbar-nav li a{
 
 .custom-logo {
     height: 70px;
-    width: 90px; 
     margin-top: 1em;
     margin-bottom: 1em;
 }
@@ -475,7 +474,6 @@ textarea::placeholder {
 
     .custom-logo {
         height: 120px;
-        width: 170px; 
         margin-top: 1em;
         margin-bottom: 1em;
         text-align: center;
