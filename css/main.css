@@ -69,6 +69,13 @@ nav .navbar-nav li a{
     color: #fff;
 }
 
+.custom-logo {
+    height: 70px;
+    width: 90px; 
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
 .links {
     float: right;
     display: flex;
@@ -465,6 +472,16 @@ textarea::placeholder {
 
 
 @media only screen and (min-width: 768px) {
+
+    .custom-logo {
+        height: 120px;
+        width: 170px; 
+        margin-top: 1em;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+
+
     .contact-form h2:before, .contact-form h2:after {
         content: "";
         height: 2px;
