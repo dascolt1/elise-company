@@ -1,7 +1,7 @@
 :root {
     --logo-color: #c49b4e;
     --background-color: #18191b;
-    --section-background: #101214;
+    --section-background: #101214; 
     --nav-background: rgba(10, 10,20, .8);
     --body-font: 'Poppins', sans-serif;
 }
@@ -71,6 +71,7 @@ nav .navbar-nav li a{
 
 .custom-logo {
     height: 70px;
+    width: 90px; 
     margin-top: 1em;
     margin-bottom: 1em;
 }
@@ -473,7 +474,8 @@ textarea::placeholder {
 @media only screen and (min-width: 768px) {
 
     .custom-logo {
-        height: 120px;
+        height: 100px;
+        width: 160px;
         margin-top: 1em;
         margin-bottom: 1em;
         text-align: center;
