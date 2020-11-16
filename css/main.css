@@ -49,11 +49,15 @@ nav .navbar-nav li a{
     font-family: 'Poppins', sans-serif;
 }
 
+.navbar i {
+    font-size: 2em;
+    color: var(--logo-color);
+}
+
 .nav-link:hover {
     color: #fff;
 }
 
-/* logo styles  */
 #navList a {
     color: var(--logo-color);
     margin-right: 2em;
