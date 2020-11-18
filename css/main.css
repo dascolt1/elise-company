@@ -420,14 +420,20 @@ textarea::placeholder {
     background-color: var(--section-background);
     color: white;
     margin-bottom: -1em;
-    padding: 4rem 2em;
-}
-
-#team {
+    padding: 4rem 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-width: 100vw;
+    width: 100vw;
+}
+
+
+#team .content img{
+    margin:0 20px 20px 0;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -609,6 +615,8 @@ textarea::placeholder {
         background-color: var(--section-background);
         color: white;
         padding: 3em 10em;
+        max-width: 100vw;
+        width: 100vw;
     }
 
     #team .content .bio {
@@ -629,10 +637,18 @@ textarea::placeholder {
         line-height: 3em;
     }
 
+    #team .content .why img{
+        height: 500px;
+        width: 300px;
+     }
+
+    #team .content .vision img{
+       height: 500px;
+       width: 300px;
+    }
+
     #team .content img{
         margin:0 20px 20px 0;
-        width: 100%;
-        height: 100%;
     }
 
     #team .content .why {
