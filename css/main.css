@@ -1,7 +1,8 @@
 :root {
     --logo-color: #c49b4e;
     --background-color: #18191b;
-    --section-background: #101214;
+    --section-background: #101214; 
+    --contact-form: #0d0e10;
     --nav-background: rgba(10, 10,20, .8);
     --body-font: 'Poppins', sans-serif;
 }
@@ -49,11 +50,15 @@ nav .navbar-nav li a{
     font-family: 'Poppins', sans-serif;
 }
 
+.navbar i {
+    font-size: 2em;
+    color: var(--logo-color);
+}
+
 .nav-link:hover {
     color: #fff;
 }
 
-/* logo styles  */
 #navList a {
     color: var(--logo-color);
     margin-right: 2em;
@@ -65,12 +70,14 @@ nav .navbar-nav li a{
     margin-bottom: 1em;
 }
 
+
 #navList a:hover {
     color: #fff;
 }
 
 .custom-logo {
     height: 70px;
+    width: 90px; 
     margin-top: 1em;
     margin-bottom: 1em;
 }
@@ -97,12 +104,12 @@ nav .navbar-nav li a{
     height: 100%;
     top: 0;
     left: 0;
-    background: url(../imgs/home-reno.jpeg) no-repeat center center fixed; 
+    background: url(../imgs/mobilehero.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    filter: brightness(.3) contrast(1.2) saturate(0);
+    filter: brightness(.5) contrast(1.2) saturate(0);
 }
 
 #hero .content {
@@ -181,6 +188,7 @@ nav .navbar-nav li a{
     padding: 2rem 3rem;
     min-width: 300px;
 }
+
 
 /* custom carousel */
 .customCarousel {
@@ -410,7 +418,33 @@ textarea::placeholder {
 	padding-left: 10px;
 } 
 
+/* START team page styles */
+#team {
+    background-color: var(--section-background);
+    color: white;
+    margin-bottom: -1em;
+    padding: 4rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100vw;
+    width: 100vw;
+}
 
+
+#team .content img{
+    margin:0 20px 20px 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+#team .content .interior-design {
+    display: flex;
+    flex-flow: column wrap;
+    flex-direction: row-reverse; 
+}
  /*  START financing page styles  */
 #soon {
     background-color: var(--background-color);
@@ -443,7 +477,7 @@ textarea::placeholder {
     padding-top: 3em;
     padding-bottom: 3em;
     color: white;
-    background-color: #18191b;
+    background-color: var(--contact-form);
     font-size: 1em;
     font-family: 'Montserrat', sans-serif;
     padding-bottom: 5em;
@@ -461,7 +495,7 @@ textarea::placeholder {
 }
 
 .footer-contact:hover {
-	color: white;
+	color: var(--logo-color);
 	text-decoration: none;
 }
 
@@ -475,12 +509,73 @@ textarea::placeholder {
 
 @media only screen and (min-width: 768px) {
 
+    #hero:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: url(../imgs/home-reno.jpeg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        filter: brightness(.3) contrast(1.2) saturate(0);
+    }
+
+    #hero .content {
+        color: var(--logo-color);
+        position: absolute;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Lora', serif;
+    }
+
+    #hero .content h3 {
+        font-size: 2.2rem;
+        font-weight: 400;
+        margin-top: 0;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 2rem;
+    }
+    
+    #hero .content h3:after {
+        content: '';
+        width: 70%;
+        margin: 2rem 15%;
+        display: block;
+        border-bottom: 4px solid var(--logo-color);
+    }
+
     .custom-logo {
-        height: 120px;
+        height: 100px;
+        width: 160px;
         margin-top: 1em;
         margin-bottom: 1em;
         text-align: center;
     }
+
+    .workCard .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        grid-gap: 2em;
+    }
+
+    .workCard .grid h1 {
+        font-size: 1.8em;
+    }
+
+    .workCard .grid li {
+        font-size: 1em;
+    }
+
 
 
     .contact-form h2:before, .contact-form h2:after {
@@ -517,6 +612,57 @@ textarea::placeholder {
         padding: 4em 0;
         font-size: 15px;
         opacity: .9;
+    }
+
+    #team {
+        background-color: var(--section-background);
+        color: white;
+        padding: 3em 10em;
+        max-width: 100vw;
+        width: 100vw;
+    }
+
+    #team .content .bio {
+        display: flex;
+        padding-top: 4em;
+        padding-bottom: 2em;
+    }
+
+    #team .content .bio p{
+        line-height: 3em;
+    }
+
+    #team .content .why p{
+        line-height: 3em;
+    }
+
+    #team .content .vision p{
+        line-height: 3em;
+    }
+
+    #team .content .why img{
+        height: 500px;
+        width: 400px;
+     }
+
+    #team .content .vision img{
+       height: 500px;
+       width: 400px;
+    }
+
+    #team .content img{
+        margin:0 20px 20px 0;
+    }
+
+    #team .content .why {
+        display: flex;
+        flex-direction: row-reverse;
+        padding-bottom: 2em;
+    }
+
+    #team .content .vision {
+        display: flex;
+        padding-bottom: 2em;
     }
 
     #soon {
