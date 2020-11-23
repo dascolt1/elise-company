@@ -103,34 +103,10 @@ nav .navbar-nav li a{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    max-width: 100%;
     position: relative;
+    filter: brightness(.9);
   }
-
-/*
-#hero:before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: url(../test.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-    filter: brightness(.5) contrast(1.2) saturate(0);
-}
-
-
-
-*/
-
-
 
 #hero .content {
     color: var(--logo-color);
@@ -162,15 +138,14 @@ nav .navbar-nav li a{
     line-height: 4rem;
 }
 
-#hero .content h1:after {
+#hero .content h3:after {
     content: '';
-    position: absolute;
-    bottom: -5rem;
     width: 70%;
-    margin: 0 15%;
+    margin: 2rem 15%;
     display: block;
     border-bottom: 4px solid var(--logo-color);
 }
+
 
 .our-btn {
     text-decoration: none;
@@ -560,7 +535,7 @@ textarea::placeholder {
     #hero .content h3 {
         font-size: 2.2rem;
         font-weight: 400;
-        margin-top: 0;
+        margin-top: .5em;
         text-align: center;
         text-transform: uppercase;
         line-height: 2rem;
@@ -573,6 +548,7 @@ textarea::placeholder {
         display: block;
         border-bottom: 4px solid var(--logo-color);
     }
+    
 
     .custom-logo {
         height: 100px;
@@ -710,3 +686,14 @@ textarea::placeholder {
         height: 50vh;
     }
 }
+
+@media only screen and (max-width: 400px) {
+    #hero .content h1 {
+        font-size: 4.3rem;
+        text-align: center;
+        display: inline-block;
+        position: relative;
+        font-weight: 600;
+        line-height: 4rem;
+    }
+  }
