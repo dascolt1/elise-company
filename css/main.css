@@ -112,7 +112,7 @@ nav .navbar-nav li a{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 140% 100%;
+    background-size: 100% 100%;
     filter: brightness(.5) contrast(1.2) saturate(0);
 }
 
