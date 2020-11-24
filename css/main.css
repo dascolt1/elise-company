@@ -629,10 +629,7 @@ textarea::placeholder {
 
     #team .content .why p{
         line-height: 3em;
-    }
-
-    #team .content .vision p{
-        line-height: 3em;
+        padding-right: 1em;
     }
 
     #team .content .why img{
@@ -640,10 +637,10 @@ textarea::placeholder {
         width: 400px;
      }
 
-    #team .content .vision img{
-       height: 500px;
-       width: 400px;
-    }
+     #team .content .bio img{
+        height: 500px;
+        width: 400px;
+     }
 
     #team .content img{
         margin:0 20px 20px 0;
@@ -653,12 +650,9 @@ textarea::placeholder {
         display: flex;
         flex-direction: row-reverse;
         padding-bottom: 2em;
+        padding-top: 4em;
     }
 
-    #team .content .vision {
-        display: flex;
-        padding-bottom: 2em;
-    }
 
     #soon {
         background-color: var(--background-color);
