@@ -105,7 +105,6 @@ nav .navbar-nav li a{
     background-size: cover;
     max-width: 100%;
     position: relative;
-    filter: brightness(.9);
   }
 
 #hero .content {
