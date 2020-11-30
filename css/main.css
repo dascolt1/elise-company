@@ -561,6 +561,8 @@ textarea::placeholder {
         display: grid;
         grid-template-columns: repeat(3, 33%);
         grid-gap: 2em;
+        align-items: start;
+        justify-content: space-evenly;
     }
 
     .workCard .grid h1 {
